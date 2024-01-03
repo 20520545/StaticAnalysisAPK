@@ -92,9 +92,6 @@ if (__name__=="__main__"):
     fileNamewithoutExtension= "./sample/"+fileName.split('/')[2].split('.')[0]
     filePath= fileName.split('.')[1]
     
-    print(fileName)
-    print(fileNamewithoutExtension)
-    print(filePath)
     # Check if APK is being analyze
     if(not os.path.isdir(fileNamewithoutExtension)):
         analyze_apk.analyze_apk(fileName,fileNamewithoutExtension) 
